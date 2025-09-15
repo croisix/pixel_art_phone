@@ -6,5 +6,10 @@
 - twitter
 - settings
 - cookie clicker
+- tinder
+- Horloge
+- Calculatrice
+- Tasks
+
 
 
