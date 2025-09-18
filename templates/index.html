@@ -18,9 +18,11 @@
             const phone = document.getElementById('phone');
             button.addEventListener('click', () => {
                 phone.src = ("../static/images/phone/phone_anim.gif")
+                setTimeout(() => {
+                    phone.src = "{{ url_for('static', filename='images/phone/phone_on.png') }}";
+                }, 4000);
             });
         </script>
-         
-    <div class="phone_button"></div>
+    </div>
 </body>
 </html>
