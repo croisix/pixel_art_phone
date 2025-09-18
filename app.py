@@ -1,11 +1,12 @@
 from flask import Flask
-import requests
 from flask import render_template
+import icons
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    imgs = icons.getAllApps()
+    return render_template("index.html", icons=imgs)
 
 
 # python -m flask run
