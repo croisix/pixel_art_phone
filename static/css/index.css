@@ -1,0 +1,48 @@
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(71,71,105);
+}
+
+.div_phone {
+  position: relative;
+  display: inline-block;
+}
+
+#phone {
+  width: auto;
+  height: 96.5vh;
+  image-rendering: pixelated;
+  display: block;
+}
+
+/*GESTION DES BOUTONS*/
+#button {
+  position: absolute;
+  width: 5%; 
+  left: 94%; 
+  top: 45%;
+  transform: translate(-50%, -50%);
+  image-rendering: pixelated;
+}
+
+#button_up {
+  position: absolute;
+  width: 3.5%;
+  left: 95%;  
+  top: 30%;
+  transform: translate(-50%, -50%);
+  image-rendering: pixelated;
+}
+
+#button_down {
+  position: absolute;
+  width: 3.5%;
+  left: 95%;  
+  top: 35%;
+  transform: translate(-50%, -50%);
+  image-rendering: pixelated;
+}

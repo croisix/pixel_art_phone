@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Phone simulator</title>
+</head>
+<body>
+    <div class="div_phone">
+        <img src="{{ url_for('static', filename='images/phone/button.png') }}" id="button" alt="button_phone">
+        <img src="{{ url_for('static', filename='images/phone/button_song.png')}}" id="button_up" alt="button_song">
+        <img src="{{ url_for('static', filename='images/phone/button_song.png')}}" id="button_down" alt="button_song">
+        <img src="{{ url_for('static', filename='images/phone/phone_off.png')}}" id="phone" alt="phone">
+        <script>
+            // Image -> Animation .gif
+            const button = document.getElementById('button');
+            const phone = document.getElementById('phone');
+            button.addEventListener('click', () => {
+                phone.src = ("../static/images/phone/phone_anim.gif")
+            });
+        </script>
+         
+    <div class="phone_button"></div>
+</body>
+</html>
