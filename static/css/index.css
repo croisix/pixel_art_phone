@@ -46,3 +46,23 @@ body {
   transform: translate(-50%, -50%);
   image-rendering: pixelated;
 }
+
+/*GRILLES DES APPLICATIONS*/
+.apps_grid {
+  position: absolute;
+  width: 19.5%;
+  top: 35%;
+  height: 45%;
+  border: solid, red;
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 3;
+  grid-gap: 5%;
+}
+
+
+/*LOGO DES APPLICATIONS*/
+.apps_grid > img{
+  height: 20%;
+  image-rendering: pixelated;
+}

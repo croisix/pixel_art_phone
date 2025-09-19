@@ -6,7 +6,7 @@ def getAllApps():
     p = Path('static/images/icons')
     files = p.rglob('*.png')
     for f in files:
-        res.append(f"static/images/icons/{f.name}")
+        res.append(f"{f.stem}")
     return res
     
 # Fonction retournant un entier: nbm d'images
@@ -17,3 +17,5 @@ def getCountApps():
     for f in files:
         res+=1
     return res
+
+print(getAllApps())
