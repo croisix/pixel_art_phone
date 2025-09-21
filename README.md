@@ -1,7 +1,24 @@
-### ADD_MENU:
+# ***Pixel Art Phone***
 
+This is a small web app that simulates a **pixel art style phone**.  
+It’s mainly a fun project to practice both web development and pixel art design.
 
-**Objectives:**
-- [x] add phone_on.png
-- [ ] add a menu with app's icons
-- [ ] add a status bar
+---
+
+## Built with
+
+- **HTML5 / CSS3**
+- **JavaScript**
+- Custom-made **pixel art icons**
+- **Python Flask**
+
+---
+
+### How to use it:
+1. Clone the repo:
+   ``` git clone https://github.com/your-username/pixel_art_phone.git ```
+
+2. Go to python console and write:
+   ``` python -m flask run```
+   
+3. Enjoy
