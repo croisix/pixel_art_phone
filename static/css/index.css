@@ -59,7 +59,7 @@ body {
   grid-auto-rows: 25%;
   grid-auto-flow: row;
   justify-items: center;
-  /*visibility: hidden;*/
+  visibility: hidden;
 }
 
 /*LOGO DES APPLICATIONS*/
