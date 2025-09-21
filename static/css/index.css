@@ -50,19 +50,23 @@ body {
 /*GRILLES DES APPLICATIONS*/
 .apps_grid {
   position: absolute;
-  width: 19.5%;
+  width: 80%;
   top: 35%;
-  height: 45%;
-  border: solid, red;
+  right: 10.4%;
+  height: 60%;
   display: grid;
-  grid-template-rows: 4;
-  grid-template-columns: 3;
-  grid-gap: 5%;
+  grid-template-columns: repeat(4,25%);
+  grid-auto-rows: 25%;
+  grid-auto-flow: row;
+  justify-items: center;
+  /*visibility: hidden;*/
 }
-
 
 /*LOGO DES APPLICATIONS*/
 .apps_grid > img{
-  height: 20%;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
   image-rendering: pixelated;
+  border-radius: 20%;
 }

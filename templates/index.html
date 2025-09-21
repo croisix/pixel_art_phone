@@ -13,23 +13,31 @@
         <img src="{{ url_for('static', filename='images/phone/button_song.png')}}" id="button_up" alt="button_song">
         <img src="{{ url_for('static', filename='images/phone/button_song.png')}}" id="button_down" alt="button_song">
         <img src="{{ url_for('static', filename='images/phone/phone_off.png')}}" id="phone" alt="phone">
+
+        <!-- GRID FOR DISPLAY APPS -->
+        <div class="apps_grid">
+                {% for img in icons%}
+                    <img src="{{"static/images/icons/" + img + ".png"}}" id="img" alt="logo_apps">
+                {% endfor %}
+        </div>
     </div>
-        <script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let buttonIsClicked = false;
+            let button = document.getElementById('button');
+            let phone = document.getElementById('phone');
             // Image -> Animation .gif
-            const button = document.getElementById('button');
-            const phone = document.getElementById('phone');
             button.addEventListener('click', () => {
-                phone.src = ("../static/images/phone/phone_anim.gif")
+                if(buttonIsClicked == false) {
+                    phone.src = ("{{ url_for('static', filename='images/phone/phone_anim.gif')}}")
+                    buttonIsClicked = true;
                 setTimeout(() => {
                     phone.src = "{{ url_for('static', filename='images/phone/phone_on.png') }}";
+                    document.querySelector('.apps_grid').style.visibility = 'visible';
                 }, 4000);
+                }
             });
-        </script>
-
-    <div class="apps_grid">
-        {% for img in icons%}
-            <img src="{{"static/images/icons/" + img + ".png"}}" id="img" alt="logo_apps">
-        {% endfor %}
-    </div>
+        });
+    </script>
 </body>
 </html>
