@@ -47,6 +47,18 @@ body {
   image-rendering: pixelated;
 }
 
+/*STATUS BARS*/
+.status_bar {
+  bottom: 90%;
+  width: 80%;
+  position: absolute;
+  height: 4%;
+  left: 10%;
+  border: solid, red;
+}
+.status_bar > img {
+  image-rendering: pixelated;
+}
 /*GRILLES DES APPLICATIONS*/
 .apps_grid {
   position: absolute;

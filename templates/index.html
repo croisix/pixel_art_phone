@@ -14,13 +14,21 @@
         <img src="{{ url_for('static', filename='images/phone/button_song.png')}}" id="button_down" alt="button_song">
         <img src="{{ url_for('static', filename='images/phone/phone_off.png')}}" id="phone" alt="phone">
 
+        <!-- STATUS BAR -->
+        <div class="status_bar">
+                {% for img in status_bar_icons%}
+                    <img src="{{"static/images/phone/status_bars/" + img + ".png"}}" id="img" alt="icons for status bars">
+                {% endfor %}
+        </div>
+
         <!-- GRID FOR DISPLAY APPS -->
         <div class="apps_grid">
-                {% for img in icons%}
+                {% for img in app_icons%}
                     <img src="{{"static/images/icons/" + img + ".png"}}" id="img" alt="logo_apps">
                 {% endfor %}
         </div>
     </div>
+
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             let buttonIsClicked = false;
