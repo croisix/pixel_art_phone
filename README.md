@@ -19,9 +19,9 @@ It’s mainly a fun project to practice both web development and pixel art desig
    ``` git clone https://github.com/your-username/pixel_art_phone.git ```
 
 2. Go to python console and install flask:
-   ``` pip install flask```
+   ``` pip install flask ```
 
 3. Next (always in python console), to lauch it, write:
-   ``` python -m flask run```
+   ``` python -m flask run ```
    
 4. Enjoy
