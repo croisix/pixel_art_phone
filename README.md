@@ -18,7 +18,10 @@ It’s mainly a fun project to practice both web development and pixel art desig
 1. Clone the repo:
    ``` git clone https://github.com/your-username/pixel_art_phone.git ```
 
-2. Go to python console and write:
+2. Go to python console and install flask:
+   ``` pip install flask```
+
+3. Next (always in python console), to lauch it, write:
    ``` python -m flask run```
    
-3. Enjoy
+4. Enjoy
