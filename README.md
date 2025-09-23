@@ -9,8 +9,9 @@ It’s mainly a fun project to practice both web development and pixel art desig
 
 - **HTML5 / CSS3**
 - **JavaScript**
-- Custom-made **pixel art icons**
 - **Python Flask**
+- pixel art made by me
+
 
 ---
 
